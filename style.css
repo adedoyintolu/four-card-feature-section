@@ -1,7 +1,7 @@
 body{
   font-family:'Poppins', sans-serif;
-  margin: 0 auto;
-  padding: 5%;
+  /* margin: 0 auto; */
+  /* padding: 5%; */
 }
 
 h1, h2{
@@ -42,8 +42,8 @@ section{
 }
 .column {
   float: left;
-  /* width: 31.33%; */
-  padding: 10px;
+  /* width: 31.33%;
+  padding: 10px; */
  
 }
 .row:after {
@@ -62,7 +62,7 @@ section{
   margin-top: 150px;
 }
 .firstBox{
-  margin-right: 10px;
+  margin-right: 15px;
 }
 .secondBox{
   border-top: 3px solid  hsl(0, 78%, 62%);
@@ -74,30 +74,52 @@ section{
 }
 .lastBox{
   border-top: 3px solid  hsl(212, 86%, 64%);
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .firstBox>img, .lastBox>img, .secondBox>img, .thirdBox>img{
   width: 50px;
   margin-top: 30px;
   float: right;
 }
-.secondBox>img{
+.secondBox>img, .thirdBox>img{
   margin-top: 30px;
-}
-.thirdBox>img{
-  margin-top: 50px;
 }
 .textWidth{
   width: 220px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .firstBox{
     margin-top: 50px;
   }
-  .lastBox{
-    margin-top: 10px;
-  }
   .firstParagraph{
     width: fit-content;
+  }
+  body{
+    padding: 20px;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width:1092px){
+  .column{
+    float: none;
+  }
+  .lastBox{
+    margin-top: 20px;
+  }.firstBox{
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+  .lastBox{
+    margin-left: 0px;
+  }
+  .secondBox{
+    margin-top: 20px;
   }
 }
