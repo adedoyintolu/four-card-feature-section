@@ -7,14 +7,18 @@ body{
 h1, h2{
   text-align: center;
 }
+p{
+  color:  #c1c1c1;
+  font-size: 12px;
+}
 .firstDiv{
   margin: 0 auto;
 }
 .firstDiv> h1{
   font-weight: lighter;
   font-size: 30px;
-  margin-bottom: -25px;
-  color: hsl(228, 45%, 44%);;
+  margin-bottom: -15px;
+  color: #c1c1c1;
 }
 .firstParagraph{
   margin: 0 auto;
@@ -23,43 +27,75 @@ h1, h2{
 .firstParagraph>p{
   text-align: center;
   font-size: 12px;
-  /* color: hsl(0, 0%, 98%) */
+  line-height: 1.5;
+  
 }
 section{
   margin: 0 auto;
 }
 .main{
   margin-top: 50px;
-  /* background-color: red; */
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 .column {
   float: left;
-  width: 31.33%;
+  /* width: 31.33%; */
   padding: 10px;
-  height: 300px;
+ 
 }
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-.firstBox{
+.firstBox, .lastBox, .secondBox, .thirdBox{
   background-color: #ffffff;
   width: 300px;
   border-radius: 5px;
   height: 200px;
   box-shadow: 2px 3px 50px  rgba(0, 0, 0, 0.05);
-  border-top: 3px solid  hsl(0, 78%, 62%);
+  border-top: 3px solid  hsl(180, 62%, 55%);
   padding: 20px;
+  margin-top: 150px;
 }
-.firstBox>img{
+.firstBox{
+  margin-right: 10px;
+}
+.secondBox{
+  border-top: 3px solid  hsl(0, 78%, 62%);
+  margin-top: 0px;
+}
+.thirdBox{
+  border-top: 3px solid  hsl(34, 97%, 64%);
+  margin-top: 20px;
+}
+.lastBox{
+  border-top: 3px solid  hsl(212, 86%, 64%);
+  margin-left: 10px;
+}
+.firstBox>img, .lastBox>img, .secondBox>img, .thirdBox>img{
   width: 50px;
-  margin-top: 10px;
+  margin-top: 30px;
   float: right;
 }
+.secondBox>img{
+  margin-top: 30px;
+}
+.thirdBox>img{
+  margin-top: 50px;
+}
+.textWidth{
+  width: 220px;
+}
 @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
+  .firstBox{
+    margin-top: 50px;
+  }
+  .lastBox{
+    margin-top: 10px;
   }
   .firstParagraph{
     width: fit-content;
