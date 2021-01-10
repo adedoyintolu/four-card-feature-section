@@ -1,7 +1,5 @@
 body{
   font-family:'Poppins', sans-serif;
-  /* margin: 0 auto; */
-  /* padding: 5%; */
 }
 
 h1, h2{
@@ -10,6 +8,7 @@ h1, h2{
 p{
   color:  #c1c1c1;
   font-size: 12px;
+  font-weight: 200;
 }
 .firstDiv{
   margin: 0 auto;
@@ -42,9 +41,6 @@ section{
 }
 .column {
   float: left;
-  /* width: 31.33%;
-  padding: 10px; */
- 
 }
 .row:after {
   content: "";
